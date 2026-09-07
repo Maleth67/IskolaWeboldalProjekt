@@ -1,0 +1,16 @@
+body{
+    background-color: aliceblue;
+
+}
+
+.hero-header{
+
+    min-height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Pg2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: cyan;
+  text-align: center;
+  border: 3px solid darkblue;
+}
