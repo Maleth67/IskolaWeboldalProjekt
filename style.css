@@ -1,0 +1,21 @@
+:root {
+    --screenWidth: 286vw; /* CSS változó név '--' jellel és érvényes egységgel */
+}
+
+* {
+    background: #927B67;
+}
+
+tr {
+    background-color: red;
+    border: 5px solid red; /* Hiányzott a keret stílusa (pl. solid) */
+}
+
+th {
+    background-color: blue;
+    height: 25px;
+}
+
+#maintable {
+    width: calc(var(--screenWidth) / 3); /* var() és calc() használata */
+}
