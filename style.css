@@ -4,6 +4,15 @@
 
 * {
     background: #927B67;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#maintable {
+    width: calc(var(--screenWidth) / 3);
+    border-collapse: separate; /* Biztosítja, hogy a cellák különállók legyenek */
+    border-spacing: 15px;      /* A rés mérete a cellák között (pl. 15px) */
 }
 
 tr {
@@ -11,11 +20,65 @@ tr {
     border: 5px solid red; /* Hiányzott a keret stílusa (pl. solid) */
 }
 
+table {
+    padding-top: 100px;
+    row-gap: 50px;
+    margin: auto;
+}
+
 th {
-    background-color: blue;
+    background-color: #ad9987;  ;
     height: 25px;
+    
+    color: white;
+    border-radius: 20px ;
+   
 }
 
 #maintable {
     width: calc(var(--screenWidth) / 3); /* var() és calc() használata */
 }
+
+#r1c2 {
+    width: 200px;
+    height: 600px;
+    background-color: #927B67;
+    
+}
+
+#r5c1 {
+
+    height: 600px;
+    background-color: #ad9987;
+}
+
+
+#fokep{
+
+    height: 600px;
+    width: 600px;   
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 15px;
+}
+
+#logocorner {
+    height: 90px;
+    width: 125px;
+    object-fit: cover;
+    border-radius: 20%;
+    background-color: #553e30 ;
+}
+
+#navbar  {
+    width: 10000000px;
+    background-color: #553e30;
+    position: fixed;
+    height: 100px;
+    margin: 0;
+
+}
+
+
+
+
