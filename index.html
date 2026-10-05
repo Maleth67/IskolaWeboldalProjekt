@@ -3,48 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iskola</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div id="navbar">
-  <img src="kepek/iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
-  </div>
-
-
+    <div id="navbar">
+        <img src="kepek/iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
+    </div>
 </header>
-    <table id="maintable">
-     <tr id="row1"> <!--sor1-->
-        <th id="r1c1"></th>
+
+<table id="maintable">
+    <tr id="row1"> 
+        <th id="r1c1"><a href="">Képzéseink</a></th>
         <th id="r1c2" rowspan="4"><img src="kepek/iskola_olda-latvanyterv__2_-removebg-preview.png" alt="" id="fokep"></th>
-        <th id="r1c3"></th>
-     </tr>
+        <th id="r1c3"><a href="">Sport</a></th>
+    </tr>
 
-      <tr id="row2"><!--sor2-->
-      <th id="r2c1"></th>
-      <th id="r2c2"></th>
-      
-     </tr>
+    <tr id="row2">
+        <th id="r2c1"><a href="">Munkatársaink</a></th>
+        <th id="r2c2"><a href="">Felvételi</a></th>
+    </tr>
 
-      <tr id="row3"><!--sor3-->
-       <th id="r3c1"></th>
-       <th id="r3c2"></th>
-      
-     </tr>
+    <tr id="row3">
+        <th id="r3c1"><a href="">Erasmus</a></th>
+        <th id="r3c2"><a href="">Történet</a></th>
+    </tr>
 
-    <tr id="row4"><!--sor4-->
-       <th id="r4c1"></th>
-       <th id="r4c2"></th>
-      
-     </tr>
+    <tr id="row4">
+        <th id="r4c1"><a href="">Rólunk</a></th>
+        <th id="r4c2"><a href="">Kapcsolat</a></th>
+    </tr>
 
-    <tr id="row5"><!--sor5-->
-       <th id="r5c1" colspan="3" rowspan="3"></th>
-     </tr>
+    <tr id="row5">
+        <th id="r5c1" colspan="3">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <div alt="1. kép" class="carousel-slide active"></div>
+                    <div alt="2. kép" class="carousel-slide active"></div>
+                    <div alt="3. kép" class="carousel-slide active"></div>
+                    <div alt="4. kép" class="carousel-slide active"></div>
+                    <div alt="5. kép" class="carousel-slide active"></div>
+                </div>
+            </div>
+        </th>
+    </tr>
+</table>
 
+<script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
 
-    </table>
+    function nextSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+    }
+
+    
+    setInterval(nextSlide, 3000);
+</script>
+
 </body>
 </html>
