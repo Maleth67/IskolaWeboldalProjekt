@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkatársaink - Szent Benedek PG</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .staff-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 110px auto 50px auto;
+        }
+
+        .section-title {
+            background-color: #ad9987;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .staff-card {
+            background-color: #ad9987;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .staff-card:hover {
+            background-color: burlywood;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+
+        .staff-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #553e30;
+        }
+
+        .staff-card h3 {
+            margin: 0 0 8px 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        .staff-card p {
+            background-color: #553e30;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .back-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            color: white;
+            background-color: #553e30;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: burlywood;
+            color: #553e30;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="navbar">
+        <a href="index.html">
+            <img src="iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
+        </a>
+    </div>
+</header>
+
+<div class="staff-container">
+
+    <!-- Vezetőség -->
+    <h2 class="section-title">Vezetőség</h2>
+    <div class="staff-grid">
+        <div class="staff-card">
+            <img src="munkatars_kepek/Rokolya Csaba.jpg" alt="Rokolya Csaba">
+            <h3>Rokolya Csaba</h3>
+            <p>Igazgató</p>
+        </div>
+        <div class="staff-card">
+            <img src="munkatars_kepek/Gálfi Tamás.jpg" alt="Kollégiumvezető">
+            <h3>Minta Anna</h3>
+            <p>Kollégiumvezető</p>
+        </div>
+    </div>
+
+    <!-- Oktatók -->
+    <h2 class="section-title">Oktatók</h2>
+    <div class="staff-grid">
+        <div class="staff-card">
+            <img src="munkatars_kepek/Havas Attila.jpeg" alt="Havas Attila">
+            <h3>Havas Attila</h3>
+            <p>12.I osztályfőnök - Informatika</p>
+        </div>
+        <div class="staff-card">
+            <img src="munkatars_kepek/Csősz Beáta.jpg" alt="Csősz Beáta">
+            <h3>Csősz Beáta</h3>
+            <p>Magyar Nyelv - Irodalom</p>
+        </div>
+        <div class="staff-card">
+            <img src="munkatars_kepek/Csenkiné Zatykó Helga.jpg" alt="Csenkiné Zatykó Helga">
+            <h3>Csenkiné Zatykó Helga</h3>
+            <p>13.C osztályfőnök - Matematika</p>
+        </div>
+        <div class="staff-card">
+            <img src="munkatars_kepek/Vincze Zsolt.jpg" alt="Vincze Zsolt">
+            <h3>Vincze Zsolt</h3>
+            <p>13.B osztályfőnök - Történelem</p>
+        </div>
+    </div>
+
+    <!-- Technikai és adminisztratív dolgozók -->
+    <h2 class="section-title">Technikai és Adminisztratív Munkatársak</h2>
+    <div class="staff-grid">
+        <div class="staff-card">
+            <img src="munkatars_kepek/Tarjányi Andrásné.jpg" alt="Tarjányi Andrásné">
+            <h3>Tarjányi Andrásné</h3>
+            <p>Iskolatitkár</p>
+        </div>
+        <div class="staff-card">
+            <img src="munkatars_kepek/Kiss Péter Ferenc.jpg" alt="Kiss Péter Ferenc">
+            <h3>Kiss Péter Ferenc</h3>
+            <p>Rendszergazda</p>
+        </div>
+    </div>
+
+    <!-- Vissza gomb -->
+    <div class="back-btn-container">
+        <a href="index.html" class="back-btn">← Vissza a főoldalra</a>
+    </div>
+
+</div>
+
+</body>
+</html>
