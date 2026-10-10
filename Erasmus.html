@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erasmus+ - Szent Benedek PG</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .erasmus-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 110px auto 50px auto;
+        }
+
+        .page-header {
+            background-color: #ad9987;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* Poszt kártya stílusok */
+        .post-card {
+            background-color: #ad9987;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 35px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #927B67;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-size: 22px;
+            color: white;
+            margin: 0;
+        }
+
+        .post-date {
+            background-color: #553e30;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .post-description {
+            background-color: #553e30;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* 3 képes galéria rács */
+        .post-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .post-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #553e30;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .post-gallery img:hover {
+            transform: scale(1.03);
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+
+        /* Reszponzivitás mobilra */
+        @media (max-width: 768px) {
+            .post-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .post-gallery img {
+                height: 250px;
+            }
+
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        .back-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            color: white;
+            background-color: #553e30;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: burlywood;
+            color: #553e30;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="navbar">
+        <a href="index.html">
+            <img src="iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
+        </a>
+    </div>
+</header>
+
+<div class="erasmus-container">
+
+    <div class="page-header">
+        <h1>Erasmus+ Programjaink</h1>
+    </div>
+
+    <!-- 1. POSZT -->
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Megérkeztünk Leptokaryába!</h2>
+            <span class="post-date">2025. Október. 22</span>
+        </div>
+        <div class="post-description">
+            Megérkeztünk Leptokaryába! Az Erasmus+ program keretében 85 PG-s diák kezdte meg kéthetes görögországi szakmai gyakorlatát. A tenger és az Olympos-hegy gyönyörű látványa fogadott minket, a tájékoztató után pedig mindent előkészítettünk a munka kezdésére.
+        </div>
+        <div class="post-gallery">
+            <img src="erasmus_kepek/1. post/1.elsokep.jpg" alt="Erasmus gorog1">
+            <img src="erasmus_kepek/1. post/1.masodikkep.jpg" alt="Erasmus gorog2">
+            <img src="erasmus_kepek/1. post/1.harmadikkep.jpg" alt="Erasmus gorog3">
+        </div>
+    </div>
+
+    <!-- 2. POSZT -->
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Elindult az Erasmus+2025 szakmai és kulturális program!</h2>
+            <span class="post-date">2025. Október. 25</span>
+        </div>
+        <div class="post-description">
+           A gépészek Kateriniben, a logisztikai főiskolán interaktív fizikai és tudománytörténeti élményekkel gazdagodtak Christos Petousis tanár úr vezetésével. Az informatikusok görög instruktoruk segítségével saját lakóhelyüket bemutató weboldalakat készítettek angol nyelven. A sikeres szakmai napok után október 25-én Thessalonikibe látogatott a csoport, ahol a város gazdag történelmével és nyüzsgő nevezetességeivel ismerkedtek meg.
+        <div class="post-gallery">
+            <img src="erasmus_kepek/2.post/2.elsokep.jpg" alt="2.post1">
+            <img src="erasmus_kepek/2.post/2.masodikkep.jpg" alt="2.post2">
+            <img src="erasmus_kepek/2.post/2.harmadikkep.jpg" alt="2.post3">
+        </div>
+    </div>
+
+    <!-- 3. POSZT -->
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Kirándulás a Meteorákhoz és újabb szakmai napok az Olympus Education Centerben</h2>
+            <span class="post-date">2025. Október. 26</span>
+        </div>
+        <div class="post-description">
+            Október 26-án a csapat a lenyűgöző természeti csodához, a Meteorák kolostoraihoz látogatott el. Október 27-én pedig folytatódott a szakmai munka: a szoftverfejlesztők kedvenc együttesükről, az informatikus rendszerüzemeltetők flex-stílusú weblapokat készítettek példaképükről, míg a gépgyártás-technológiai technikusok Lego robotokat építettek és programoztak az Olympus Education Centerben.</div>
+        <div class="post-gallery">
+            <img src="erasmus_kepek/3.post/3.elsokep.jpg" alt="3.post1">
+            <img src="erasmus_kepek/3.post/3.masodikkep.jpg" alt="3.post2">
+            <img src="erasmus_kepek/3.post/3.harmadikkep.jpg" alt="3.post3">
+        </div>
+    </div>
+
+    <!-- 4. POSZT -->
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">OXI-nap és faipari látogatás az Erasmus+ programban</h2>
+            <span class="post-date">2025. Október. 29</span>
+        </div>
+        <div class="post-description">
+           Görögország nemzeti ünnepén, az OXI-napon a PG-sek a leptokaryai felvonulásokon ünnepeltek. Ezt követően az informatikusok angol nyelvű önéletrajz-weboldalakat készítettek, a gépészek pedig október 29-én a larisszai ALFA WOOD GROUP fafeldolgozó gyárában (faipari termékek, fenntartható technológiák) tettek szakmai látogatást Giannis Delfos vezetésével.</div>
+        <div class="post-gallery">
+            <img src="erasmus_kepek/4.post/4.elsokep.jpg" alt="4.post1">
+            <img src="erasmus_kepek/4.post/4.masodikkep.jpg" alt="4.post2">
+            <img src="erasmus_kepek/4.post/4.harmadikkep.jpg" alt="4.post3">
+        </div>
+    </div>
+
+    <!-- 5. POSZT -->
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">
+            Lego-robotok programozása és hajókirándulás Skiathos szigetére</h2>
+            <span class="post-date">2025. Október. 31</span>
+        </div>
+        <div class="post-description">
+            Október 30-án a gépészek kreatív feladatként szenzorokkal (közelség-, szín- és nyomásérzékelő) felszerelt, önállóan közlekedő, szöveget kiíró és leparkoló Lego robotokat építettek és programoztak, míg az informatikusok csoportokban weblaptervezéssel foglalkoztak. Október 31-én, pénteken a csoport hajóval Skiathos szigetére látogatott, ahol a tengerparti szuvlakizás mellett feledhetetlen élményekkel fedezték fel a mesebeli sziget zugait.
+        </div>
+        <div class="post-gallery">
+            <img src="erasmus_kepek/5.post/5.elsokep.jpg" alt="5.post1">
+            <img src="erasmus_kepek/5.post/5.masodikkep.jpg" alt="5.post2">
+            <img src="erasmus_kepek/5.post/5.harmadikkep.jpg" alt="5.post3">
+        </div>
+    </div>
+
+    <!-- Vissza a főoldalra gomb -->
+    <div class="back-btn-container">
+        <a href="index.html" class="back-btn">← Vissza a főoldalra</a>
+    </div>
+
+</div>
+
+</body>
+</html>
