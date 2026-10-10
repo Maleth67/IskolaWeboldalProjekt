@@ -3,30 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szent Benedek PG - Sport</title>
+    <title>Sport és Eredmények - Szent Benedek PG</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .sport-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 110px auto 50px auto;
+        }
+
+        .page-header {
+            background-color: #ad9987;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        /* Poszt kártya stílusok */
+        .post-card {
+            background-color: #ad9987;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 35px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #927B67;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .post-title {
+            font-size: 22px;
+            color: white;
+            margin: 0;
+        }
+
+        .post-date {
+            background-color: #553e30;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .post-description {
+            background-color: #553e30;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* 3 képes galéria rács */
+        .post-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .post-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #553e30;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .post-gallery img:hover {
+            transform: scale(1.03);
+            filter: brightness(1.1);
+            cursor: pointer;
+        }
+
+        /* Reszponzivitás mobilra */
+        @media (max-width: 768px) {
+            .post-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .post-gallery img {
+                height: 250px;
+            }
+
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        .back-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            color: white;
+            background-color: #553e30;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: burlywood;
+            color: #553e30;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sport</h1>
-    <h2>Iskolánkban rendkívül fontos szerepet játszik a sport a diákoknak és a tanároknak is.</h2>
-    <table>
-    
-                  
-    <img src="pgsport.jpg" alt="sportkep" id="sportkep">
-    <h3>  Rengeteg sportág közül lehet választani:   </h3>
-    
-    <ul>
-        <li>Labdarúgás</li>
-        <li>Röplabda</li>
-        <li>Asztalitenisz</li>
-        <li>Testépítés</li>
-        <li>Tollaslabda</li>
-        <li>Kosárlabda</li>
 
-    </ul>
+<header>
+    <div id="navbar">
+        <a href="index.html">
+            <img src="iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
+        </a>
+    </div>
+</header>
+
+<div class="sport-container">
+
+    <div class="page-header">
+        <h1>Sporteredményeink és Sportélet</h1>
+    </div>
+
+   
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Megyei bajnok a súlylökőcsapat!</h2>
+            <span class="post-date">2026. Október</span>
+        </div>
+        <div class="post-description">
+          Kecskeméten rendezték meg a Diákolimpia Ügyességi Csapatbajnokság megyei döntőjét, ahol iskolánk súlylökőcsapata I. helyezést ért el.
+A csapat tagjai: Czimer Benjamin, Földes Máté, Kis Roland, Lovas Levente, Máriás Zalán, Tajti Roland.
+Felkészítő tanár: Preiszné Bene Mónika
+        </div>
+        <div class="post-gallery">
+            <img src="sport/sulylokesfoto.jpg" alt="sulylökőcsapat" >
+        </div>
+    </div>
+
     
-    
-    
-    
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Iskolai Röplabda Bajnokság</h2>
+            <span class="post-date">2025. Június</span>
+        </div>
+        <div class="post-description">
+           A tanév zárásaként első alkalommal rendeztük meg iskolánkban az osztályok közötti röplabda bajnokságot, amire nagyon nagy volt az érdeklődés. Összesen 12 osztály jelentkezett. 
+A bajnokság végső sorrendje:
+1 hely: 11.D
+2.hely: 9/Knyd
+3.hely: 10.D.
+Külön kiemelendő, hogy a 9/Knyd osztályban 3 lány is játszott! Gratulálunk!
+             <div class="post-gallery">
+            <img src="sport/rop1.jpg" alt="rop1">
+            <img src="sport/ropi2.jpg" alt="ropi2">
+        </div>
+            
+        </div>
+    </div>
+
+   
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">Constantinum kollégiumok közötti teremfoci bajnokság</h2>
+            <span class="post-date">2025. December</span>
+        </div>
+        <div class="post-description">
+            Idén hatodik alkalommal rendezték meg a "Constantinum kollégiumok közötti teremfoci bajnokságot" december 3-án a Constantinum Sportcsarnokában.
+A város 4 kollégiumának  csapata körmérkőzéses formában mérette meg erejét és foci tudását. A Szent Benedek PG kollégiumának csapata az előkelő 2. helyezést szerezte meg.
+A csapat tagjai: Rózsavölgyi Ferenc 11.B (kapus), Varga Tibor 10.A ( csapatkapitány), Szabó Marcell 10.A, Antal József 12.B, Bánov Alex 9/Knya, Bobek Bálint 9/Knyc, Héra Olivér Waldorf.
+Gratulálunk a fiúknak!</div>
+        <div class="post-gallery">
+            <img src="sport/foci1.jpg" alt="Foci 1">
+            <img src="sport/foci2.jpg" alt="Foci 2">
+            <img src="sport/foci3.jpg" alt="Foci 3">
+        </div>
+    </div>
+
+   
+    <div class="post-card">
+        <div class="post-header">
+            <h2 class="post-title">KIDS kupa kosárlabda</h2>
+            <span class="post-date">2026. május</span>
+        </div>
+        <div class="post-description">
+            Iskolánk adott helyet a KIDS kupa kosárlabda V-VI. korcsoport küzdelmeinek 2026. május 25-én. A színvonalas tornán iskolánk csapata I. helyezést ért el!
+Szívből gratulálunk!
+        <div class="post-gallery">
+            <img src="sport/kosar1.jpg" alt="Kosár 1">
+            <img src="sport/kosar2.jpg" alt="Kosár 2">
+           
+        </div>
+    </div>
+
+    <!-- Vissza a főoldalra gomb -->
+    <div class="back-btn-container">
+        <a href="index.html" class="back-btn">← Vissza a főoldalra</a>
+    </div>
+
+</div>
+
 </body>
 </html>

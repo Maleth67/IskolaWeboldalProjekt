@@ -9,8 +9,9 @@
 <body>
 
 <header>
-    <div id="navbar">
+    <div id="navbar" style="justify-content: center; gap: 15px; padding-left: 0;">
         <img src="iskola_olda-latvanyterv__2_-removebg-preview.png" alt="logocorner" id="logocorner">
+        <span style="color: white; font-size: 22px; font-weight: bold; font-family: Arial, sans-serif;">Szent Benedek PG</span>
     </div>
 </header>
 
@@ -32,7 +33,7 @@
     </tr>
 
     <tr id="row4">
-        <th id="r4c1"><a href="">Rólunk</a></th>
+        <th id="r4c1"><a href="rolunk.html">Rólunk</a></th>
         <th id="r4c2"><a href="kapcsolat.html">Kapcsolat</a></th>
     </tr>
 
@@ -42,37 +43,40 @@
                 <div class="carousel-images">
                     <div alt="1. kép" class="carousel-slide active" id="golyataborslide">
                         <h1>Gólyaavató 2026</h1>
-                        
                     </div>
                     <div alt="2. kép" class="carousel-slide " id="unnepslide">
-                        
-                        
-
                     </div>
                     <div alt="3. kép" class="carousel-slide " id="ebedslide">
                         <h1 id="carh">Mai ebéd:</h1>
                         <p>Paradicsom leves</p>
                         <p>Tokány</p>
-
-                  
-
                     </div>
                     <div alt="5. kép" class="carousel-slide " id="nyiltnapokslide">
                       <h1>Nyílt napok</h1>
-                      <div class = "kepkeret">
-                    <img src="nyiltnapok.jpg" alt="nyiltnapkep">
-                      
-                        
-
+                      <div class="kepkeret">
+                        <img src="nyiltnapok.jpg" alt="nyiltnapkep">
+                      </div>
                     </div>
-                    
                 </div>
+            </div>
+        </th>
+    </tr>
+
+    <!-- Előre megadott elemekkel működő szerencsekerék -->
+    <tr id="row6">
+        <th id="r6c1" colspan="3" style="background-color: #ad9987; border-radius: 20px; padding: 25px; text-align: center;">
+            <h2 style="color: white; margin-bottom: 15px; background: none;"> Szerencsekerék </h2>
+            <div style="background-color: #553e30; padding: 20px; border-radius: 15px; max-width: 700px; margin: 0 auto;">
+                <p style="color: white; margin-bottom: 15px; font-size: 15px;">Próbáld ki a szerencsédet!</p>
+                <button onclick="spinWheel()" style="background-color: #927B67; color: white; border: none; padding: 12px 25px; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer; transition: background 0.3s;">Pörgetés! </button>
+                <div id="wheelResult" style="margin-top: 20px; font-size: 24px; color: #ffeb3b; font-weight: bold; min-height: 40px;"></div>
             </div>
         </th>
     </tr>
 </table>
 
 <script>
+    // Képforgó logika
     const slides = document.querySelectorAll('.carousel-slide');
     let currentIndex = 0;
 
@@ -82,8 +86,32 @@
         slides[currentIndex].classList.add('active');
     }
 
-  
     setInterval(nextSlide, 3000);
+
+    // Előre megadott elemek a szerencsekerékhez
+    const presetItems = [
+        "Ajándék andris szendvics",  
+        "Szerencsenap (Nincs házi!)", 
+        "Tesztírás holnap", 
+        "Szamonkeres a 6/b -ben"
+    ];
+
+    function spinWheel() {
+        const resultDiv = document.getElementById('wheelResult');
+        let counter = 0;
+        resultDiv.innerText = "Pörög a kerék... ";
+        
+        let interval = setInterval(() => {
+            let randomIndex = Math.floor(Math.random() * presetItems.length);
+            resultDiv.innerText = presetItems[randomIndex];
+            counter++;
+            if (counter > 15) {
+                clearInterval(interval);
+                let finalIndex = Math.floor(Math.random() * presetItems.length);
+                resultDiv.innerText = " Eredmény: " + presetItems[finalIndex];
+            }
+        }, 100);
+    }
 </script>
 
 </body>
