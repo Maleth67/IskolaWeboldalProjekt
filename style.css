@@ -41,7 +41,7 @@
         background-color: #553e30;
     }
 
-    /* Táblázat beállítások */
+    
     table {
         width: 90%;
         max-width: 1200px;
@@ -255,23 +255,7 @@
     
 }
 
-#felvetelikep1{
-    width:  60%;
-    height: auto;
-    float: left;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    
-}
 
-#felvetelikep2{
-    width:  60%;
-    height: auto;
-    float: right;
-    margin-right: 40px;
-    margin-top: 10px;
-    
-}
 
 #sportkep, #felvetelikep1, #felvetelikep2 {
     border-radius: 12px;
@@ -328,9 +312,62 @@ ul, li {
     border-radius: 10px;
 }
 
+     .back-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            color: white;
+            background-color: #553e30;
+            padding: 12px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: burlywood;
+            color: #553e30;
+        }
 
 
 
+
+.image-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#felvetelikep1 {
+    margin-top: 15px;
+    width: 60%;
+    height: auto;
+    align-self: flex-start; 
+    margin-bottom: 15px;
+    margin-left: 20px;     
+}
+
+#felvetelikep2 {
+    
+    width: 60%;
+    height: auto;
+    align-self: flex-end;   
+    margin-top: 15px;
+    margin-right: 20px;    
+}
+
+.back-btn-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    clear: both;
+    margin-bottom: 30px;
+}
 
 
 
